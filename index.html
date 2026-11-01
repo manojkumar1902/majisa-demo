@@ -11,12 +11,15 @@
         
         /* Navbar */
         header { background-color: #0f172a; color: white; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        .logo { font-size: 18px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+        
+        /* Logo Fix: Removed display flex to stop text breaking */
+        .logo { font-size: 18px; font-weight: 700; line-height: 1.2; }
         .logo span { color: #f59e0b; }
-        .call-btn { background-color: #f59e0b; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none; font-weight: 600; font-size: 14px; }
+        
+        .call-btn { background-color: #f59e0b; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none; font-weight: 600; font-size: 14px; white-space: nowrap; }
         
         /* Hero Section */
-        .hero { background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1504307651254-35680f356f12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover; color: white; padding: 80px 20px; text-align: center; }
+        .hero { background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1504307651254-35680f356f12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover; color: white; padding: 60px 20px; text-align: center; }
         .hero h1 { font-size: 32px; margin-bottom: 15px; line-height: 1.2; }
         .hero p { font-size: 16px; margin-bottom: 25px; font-weight: 300; color: #cbd5e1; }
         .hero-btns { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
@@ -39,6 +42,20 @@
         footer { background-color: #0f172a; color: white; padding: 40px 20px; text-align: center; margin-top: 50px; }
         footer h3 { font-size: 22px; margin-bottom: 15px; color: #f59e0b; }
         footer p { color: #cbd5e1; font-size: 14px; margin-bottom: 10px; }
+
+        /* MOBILE RESPONSIVE FIX */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column; /* Logo aur Call button ko upar-neeche kar dega */
+                gap: 12px;
+                text-align: center;
+                padding: 15px;
+            }
+            .logo { font-size: 16px; }
+            .hero h1 { font-size: 24px; }
+            .hero p { font-size: 14px; }
+            .section-title { font-size: 22px; }
+        }
     </style>
 </head>
 <body>
@@ -65,7 +82,6 @@
         
         <!-- Product 1: Tiles -->
         <div class="product-card">
-            <!-- Yahan aap client ki Instagram se tiles ki photo laga sakte hain -->
             <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Tiles">
             <div class="product-info">
                 <h3>Jasol Tiles & Sanitary</h3>
@@ -76,7 +92,6 @@
 
         <!-- Product 2: Cement -->
         <div class="product-card">
-            <!-- Yahan JK Laxmi Cement ki photo laga sakte hain -->
             <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Cement">
             <div class="product-info">
                 <h3>JK Laxmi & Wonder Cement</h3>
@@ -87,7 +102,6 @@
 
         <!-- Product 3: Pumps & Motors -->
         <div class="product-card">
-            <!-- Yahan KTC Pumps/Motors ki photo laga sakte hain -->
             <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Pumps and Motors">
             <div class="product-info">
                 <h3>KTC Pumps & Motors</h3>
@@ -98,7 +112,6 @@
 
         <!-- Product 4: Pipes -->
         <div class="product-card">
-            <!-- Yahan Pipes ki photo laga sakte hain -->
             <img src="https://images.unsplash.com/photo-1542013936693-884638332954?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Pipes">
             <div class="product-info">
                 <h3>PVC & Plumbing Pipes</h3>
