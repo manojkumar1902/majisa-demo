@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majisa Machinery & Jasol Tiles - Bajju</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background-color: #f8fafc; color: #333; }
+        
+        /* Navbar */
+        header { background-color: #0f172a; color: white; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .logo { font-size: 18px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+        .logo span { color: #f59e0b; }
+        .call-btn { background-color: #f59e0b; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none; font-weight: 600; font-size: 14px; }
+        
+        /* Hero Section */
+        .hero { background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1504307651254-35680f356f12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover; color: white; padding: 80px 20px; text-align: center; }
+        .hero h1 { font-size: 32px; margin-bottom: 15px; line-height: 1.2; }
+        .hero p { font-size: 16px; margin-bottom: 25px; font-weight: 300; color: #cbd5e1; }
+        .hero-btns { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+        .btn-primary { background-color: #f59e0b; color: white; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: 600; font-size: 16px; border: none; cursor: pointer; }
+        .btn-secondary { background-color: transparent; color: white; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: 600; font-size: 16px; border: 2px solid white; }
+
+        /* Products Section */
+        .section-title { text-align: center; margin: 50px 0 30px; font-size: 26px; color: #0f172a; font-weight: 700; }
+        .products { padding: 0 20px; max-width: 1100px; margin: auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+        .product-card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; }
+        .product-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+        .product-card img { width: 100%; height: 200px; object-fit: cover; }
+        .product-info { padding: 20px; text-align: center; }
+        .product-info h3 { font-size: 18px; color: #0f172a; margin-bottom: 10px; }
+        .product-info p { font-size: 14px; color: #64748b; margin-bottom: 15px; min-height: 40px; }
+        .whatsapp-btn { display: inline-block; background-color: #22c55e; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none; font-size: 14px; font-weight: 600; transition: background 0.3s; }
+        .whatsapp-btn:hover { background-color: #16a34a; }
+
+        /* Footer */
+        footer { background-color: #0f172a; color: white; padding: 40px 20px; text-align: center; margin-top: 50px; }
+        footer h3 { font-size: 22px; margin-bottom: 15px; color: #f59e0b; }
+        footer p { color: #cbd5e1; font-size: 14px; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Majisa Machinery & <span>Jasol Tiles</span></div>
+        <a href="tel:+918690483374" class="call-btn">Call: 8690483374</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Bajju's Trusted Partner for<br>Tiles, Machinery & Pipes</h1>
+        <p>Top quality JK Laxmi Cement, KTC Pumps, Motors, and Premium Tiles at wholesale rates.</p>
+        <div class="hero-btns">
+            <a href="https://wa.me/918690483374?text=Hello%20Majisa%20Machinery,%20I%20want%20to%20know%20about%20your%20products" class="btn-primary">WhatsApp Us</a>
+            <a href="#products" class="btn-secondary">View Products</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <h2 class="section-title" id="products">Our Premium Products</h2>
+    <section class="products">
+        
+        <!-- Product 1: Tiles -->
+        <div class="product-card">
+            <!-- Yahan aap client ki Instagram se tiles ki photo laga sakte hain -->
+            <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Tiles">
+            <div class="product-info">
+                <h3>Jasol Tiles & Sanitary</h3>
+                <p>Premium floor and wall tiles for homes and commercial spaces.</p>
+                <a href="https://wa.me/918690483374?text=I%20want%20to%20know%20the%20price%20of%20Tiles" class="whatsapp-btn">Get Price</a>
+            </div>
+        </div>
+
+        <!-- Product 2: Cement -->
+        <div class="product-card">
+            <!-- Yahan JK Laxmi Cement ki photo laga sakte hain -->
+            <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Cement">
+            <div class="product-info">
+                <h3>JK Laxmi & Wonder Cement</h3>
+                <p>High-strength cement for strong and durable construction.</p>
+                <a href="https://wa.me/918690483374?text=I%20want%20to%20know%20the%20price%20of%20Cement" class="whatsapp-btn">Get Price</a>
+            </div>
+        </div>
+
+        <!-- Product 3: Pumps & Motors -->
+        <div class="product-card">
+            <!-- Yahan KTC Pumps/Motors ki photo laga sakte hain -->
+            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Pumps and Motors">
+            <div class="product-info">
+                <h3>KTC Pumps & Motors</h3>
+                <p>Heavy-duty water pumps and motors for agriculture and homes.</p>
+                <a href="https://wa.me/918690483374?text=I%20want%20to%20know%20the%20price%20of%20Pumps%20and%20Motors" class="whatsapp-btn">Get Price</a>
+            </div>
+        </div>
+
+        <!-- Product 4: Pipes -->
+        <div class="product-card">
+            <!-- Yahan Pipes ki photo laga sakte hain -->
+            <img src="https://images.unsplash.com/photo-1542013936693-884638332954?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Pipes">
+            <div class="product-info">
+                <h3>PVC & Plumbing Pipes</h3>
+                <p>All types of heavy-duty pipes, fittings, and hardware items.</p>
+                <a href="https://wa.me/918690483374?text=I%20want%20to%20know%20the%20price%20of%20Pipes" class="whatsapp-btn">Get Price</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h3>Majisa Machinery & Jasol Tiles</h3>
+        <p>📍 Mistry Market / Jasol Kua, Bajju (Bikaner)</p>
+        <p>📞 Pukhraj Kumawat: +91 8690483374</p>
+        <p style="margin-top: 20px; font-size: 12px;">&copy; 2026 Majisa Machinery & Jasol Tiles. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
